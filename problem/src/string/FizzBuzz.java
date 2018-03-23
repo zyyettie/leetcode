@@ -54,6 +54,7 @@ public class FizzBuzz {
 	}
 	
 	//to avoid % operand
+	//一般来说，对于CPU取余数的运算相对来说效率很低，上面解法避免了使用大量的求余数操作，提升了程序的性能。
 	public List<String> betterSolution3(int n){
 		List<String> resArray = new ArrayList<String>(0);
 		for(int i=1,fizz=0,buzz=0;i<=n;i++) {
